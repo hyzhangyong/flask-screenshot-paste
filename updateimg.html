@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<script src='js/jquery.min.js'></script>
+<script src='js/screenshot-paaste.js'></script>
+<input id='copyimg' tpye='text' placeholder='screenshots ctrl+v paste here'>
+<span>return picurl</span><input id='rpic'>
+<div id='imgPreview'></div>
+<script type='text/javascript'>
+  $('#copyimg').screenshotPaste({
+    imgContainer:'#imgPreview', //view pic holder
+    imgHeight:50,
+    imgInputUrl:'#picurl'
+  })
+</script>
+</html>

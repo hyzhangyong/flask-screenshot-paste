@@ -42,7 +42,8 @@
 		});
 		//return imgurl;
         $(img).css({ height: options.imgHeight });
-		$(img).attr("onclick","javascript:showimage("+"'"+imgurl+"'"+")");
+	//img加入onclick，点击小图放大显示。
+	$(img).attr("onclick","javascript:showimage("+"'"+imgurl+"'"+")");
         $(document).find(options.imgContainer)
         .html('')
         .show()
